@@ -1,0 +1,146 @@
+.bowlby-one-regular {
+    font-family: "Bowlby One", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.roboto-mono-body {
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: 150;
+    font-style: normal;
+}
+  
+
+#myVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+}
+
+#content {
+    display: flex;
+    position: relative;
+    z-index: 0;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+hr {
+    color: rgba(240, 240, 240, 0.5);
+    width: 90%;
+}
+
+ul {
+    list-style-type: none;
+}
+
+li::before {
+    content: "> "
+}
+
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: rgba(220, 220, 220, 0.5);
+    text-align: center;
+}
+
+.title {
+    width: 100%;
+    text-align: center;
+    font-family: "Bowlby One";
+    font-size: 26px;
+    position: relative;
+    color: #DEDEDE;
+}
+
+.column {
+    width: 25%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #DEDEDE;
+    text-align: center;
+    font-family: "Bowlby One";
+}
+
+.bigcolumn {
+    width: 50%;
+    padding: 10px;
+    box-sizing: border-box;
+    color: #DEDEDE;
+    text-align: center;
+    font-family: "Bowlby One";
+}
+
+a {
+    text-decoration: none;
+    font-weight: bold;
+    color: inherit;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+}
+  
+.hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(220, 220, 220, 0.5);
+    transition: transform 0.25s ease-out;
+}
+  
+.hover-underline-animation:hover::after {
+    transform: scaleX(1);
+}
+  
+  
+.hover-underline-animation.center::after {
+    transform-origin: bottom center;
+}
+  
+.hover-underline-animation.center:hover::after {
+    transform-origin: bottom center;
+}
+
+.border {
+    border-color: rgba(220, 220, 220, 0.5);
+}
+
+.border-left {
+    border-left: solid;
+}
+
+.border-right {
+    border-right: solid;
+}
+
+.column-header {
+    color: rgba(220, 220, 220, 1);
+    size: 18px;
+}
+
+.column-header-bold {
+    font-weight: bold;
+}
+
+.text-body {
+    font-family: "Roboto Mono"
+}
+
+.left-align-box {
+    align-content: left;
+    text-align: left;
+}
