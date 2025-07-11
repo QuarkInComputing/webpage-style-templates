@@ -8,7 +8,7 @@ const list = document.getElementById("projectlist")
 for (const name of projectNames) {
     console.log(name);
 
-    const p = document.createElement("p");
-    p.textContent = name;
+    const entry = document.createElement("p");
+    entry.textContent = name;
     list.appendChild(p);
 }
