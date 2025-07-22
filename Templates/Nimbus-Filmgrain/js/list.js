@@ -1,24 +1,22 @@
 import { projects } from "./projects.js";
+import { setProject } from "./projectviewer.js";
 
-const projectNames = projects.map(project => project.name);
-const list = document.getElementById("projectlist")
+const list = document.getElementById("projectlist");
 
-// console.log(projectNames);
-
-for (const name of projectNames) {
-    console.log(name);
+for (const project of projects) {
+    const { name, description } = project;
 
     const entry = document.createElement("a");
     entry.setAttribute("href", "#");
-    entry.setAttribute("class", "hover-underline-animation");
-    entry.setAttribute("id", "projectlink");
-    entry.setAttribute("onclick", "") //Put method here
-    
+    entry.setAttribute("class", "hover-underline-animation projectlink");
+
+    // Pass both name and description to setProject using a closure
+    entry.addEventListener("click", () => setProject(name, description));
+
     entry.textContent = name;
     list.appendChild(entry);
-}
 
-for(var i = 0; i < 2; i++){
-    const pagebreak = document.createElement("BR"); 
-    document.getElementById("projectlink").insertBefore(pagebreak, null); 
+    // Two line breaks after each link
+    list.appendChild(document.createElement("br"));
+    list.appendChild(document.createElement("br"));
 }
