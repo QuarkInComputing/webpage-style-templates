@@ -1,4 +1,4 @@
-# Webpage Styles
+# Webpage Style Templates
 
 This is a collection of design templates for many different types of websites, though most templates are built around a landing (index) page.
 
