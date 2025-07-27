@@ -18,6 +18,14 @@ Note that the typeface and GitHub logo are not owned by me and as such I do not 
 
 ## Moderne Latte
 
+![Cafe Latte Thumbnail](Thumbnails/Latte.png)
+
+**Moderne Latte** is simplistic yet pleasant designed as nothing more than a basic landing page for a potential product and/or project. There is absolutely no JavaScript utalised within this landing page which leads to (and is intentionally the result of) a basic design.
+
+This template is best suited as a landing page for something wider in scale.
+
+Triangle logo is used freely with permission from *Freepik*.
+
 # License
 
 All of these templates are free for use commercial & non-commercial use. Please see the [license](LICENSE) for further information.
